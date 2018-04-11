@@ -1,0 +1,65 @@
+//Proyecto final
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+
+
+//Definir maximos
+#define COLLUMN 8
+#define ROW 8
+
+//Imprimir tablero inicial
+void imprimir_tablero_inicial (char tablero1 [COLLUMN] [ROW]) {
+
+//CONTADORES
+    int i, j;
+    system("COLOR 1A");
+
+//CONTADOR RENGLONES
+    for (i=0; i<COLLUMN; i++)
+    {
+        //CONTADOR COLUMNAS
+        for (j=0; j<ROW; j++)
+        {
+
+            //IMPRIME LA MATRIZ
+
+            printf("%c ", tablero1[i][j]);
+
+        }
+        //IMPRIME SALTO DE LINEA
+        printf("\n");
+    }
+
+}
+
+//Inicializamos matriz
+
+void tablero_inicial (){
+
+    char tablero1[ROW][COLLUMN]={{176,176,176,176,176,176,176,176},
+                                 {176,176,176,176,176,176,176,176},
+                                 {176,176,176,176,176,176,176,176},
+                                 {176,176,176,176,176,176,176,176},
+                                 {176,176,176,176,176,176,176,176},
+                                 {176,176,176,176,176,176,176,176},
+                                 {176,176,176,176,176,176,176,176},
+                                 {176,176,176,176,176,176,176,176}};
+    imprimir_tablero_inicial(tablero1);
+}
+
+
+
+
+int main () {
+
+
+tablero_inicial();
+
+
+
+
+
+}
