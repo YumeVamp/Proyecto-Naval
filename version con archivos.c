@@ -1,5 +1,5 @@
 /**
-*@Name: Jesús Alberto Vázquez Rioja Fatima
+*@Name: JesÃºs Alberto VÃ¡zquez Rioja Fatima
 *@Date: Abril 11 '18
 *[Description] Proyecto Final: Batalla Naval.
 **/
