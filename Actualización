@@ -1,0 +1,139 @@
+//Proyecto final
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+
+
+//Definir maximos
+#define COLUMNAS 10
+#define FILAS 10
+
+//Imprimir tablero inicial
+void imprimir_tablero (char tablero1 [COLUMNAS] [FILAS])
+{
+    //    imprime_scoreboard();
+
+//CONTADORES
+    int i, j;
+    system("COLOR 1A");
+    int k;
+//CONTADOR RENGLONES
+
+    printf("        ");
+    for(k=1; k<9; k++)
+    {
+
+        printf("%i ", k);
+    }
+
+    printf("\n");
+
+    for (i=0; i<COLUMNAS; i++)
+    {
+        printf("       %c ", 'A'+i);
+        //CONTADOR COLUMNAS
+        for (j=0; j<FILAS; j++)
+        {
+
+            //IMPRIME LA MATRIZ
+
+            printf("%c ", tablero1[i][j]);
+
+        }
+        //IMPRIME SALTO DE LINEA
+        printf("\n");
+    }
+
+}
+
+//Inicializamos matriz
+
+void inicializar_tablero(char tablero[COLUMNAS][FILAS])
+{
+    //Inicializar cada localidad con 176
+
+
+
+}
+
+//MENÚ
+void menu ()
+{
+    printf("MENU\n");
+    printf("PRESIONE 1 PARA UBICAR BARCOS\n");
+    printf("PRESIONE 2 PARA CARGAR PARTIDA\n");
+
+}
+
+//COLOCAMIENTO DE LOS BARCOS DEL JUGADOR
+void colocar_barcos (char tablero_jugador[][COLUMNAS])
+{
+
+}
+
+//COLOCAR LOS BARCOS DE LA COMPUTADORA
+
+
+//GUARDAR PARTIDA
+
+
+//CARGAR PARTIDA
+
+
+//TURNO DEL USUARIO
+
+    //Elegir las coordenadas para el tiro
+
+    //Realizar el tiro
+
+    //Verificar si hay un barco de la computadora
+
+    //Verificar si ya se hundieron todos los barcos de la computadora
+
+
+
+//TURNO DE LA COMPUTADORA
+
+    //Elegir las coordenadas para el tiro
+
+    //Realizar el tiro
+
+    //Verificar si hay un barco del jugador
+
+    //Verificar si ya se hundieron todos los barcos del jugador
+
+
+
+//VERIFICAR SI HAY UN GANADOR
+
+
+
+
+//DESEABLE: REGISTAR DATOS DE LA PARTIDA EN UN SCOREBOARD
+
+//DESEABLE: VER EL SCOREBOARD
+
+
+
+//INICIO DEL PROGRAMA
+int main ()
+{
+    char jugador[COLUMNAS][FILAS];
+    inicializar_tablero(jugador);
+    char computadora[COLUMNAS][FILAS];
+    inicializar_tablero(computadora);
+
+    menu();
+    int opcion;
+    scanf("%i%*c", &opcion);
+    switch(opcion)
+    {
+    case 1:
+    {
+        puts("VISUALIZAR TABLERO");
+        imprimir_tablero(jugador);
+    }
+    }
+}
